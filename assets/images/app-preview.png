@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="560" viewBox="0 0 280 560">
+  <rect fill="#f3f4f6" width="280" height="560" rx="24"/>
+  <text x="140" y="270" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" fill="#6b7280">App Screenshot</text>
+  <text x="140" y="295" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#9ca3af">Replace with actual</text>
+  <text x="140" y="310" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#9ca3af">app preview</text>
+</svg>
