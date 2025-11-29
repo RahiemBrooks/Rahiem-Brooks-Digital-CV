@@ -945,6 +945,113 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--gray-500);
 }
 
+/* ============================================
+   Pill Buttons (App Section)
+   ============================================ */
+.button-row {
+    display: flex;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+    margin-top: var(--space-lg);
+}
+
+.pill-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
+    padding: 0.875rem 1.75rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: var(--radius-full);
+    text-decoration: none;
+    transition: all var(--transition-base);
+    border: 2px solid transparent;
+}
+
+.pill-button.primary {
+    background: var(--primary);
+    color: var(--white);
+    border-color: var(--primary);
+}
+
+.pill-button.primary:hover {
+    background: var(--primary-dark);
+    border-color: var(--primary-dark);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.pill-button.secondary {
+    background: transparent;
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.pill-button.secondary:hover {
+    background: var(--primary);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* App Preview Clickable Image */
+.app-preview-link {
+    display: block;
+    transition: transform var(--transition-base);
+}
+
+.app-preview-link:hover {
+    transform: scale(1.02);
+}
+
+.app-preview-link:hover .phone-screen {
+    box-shadow: 0 25px 35px -5px rgb(0 0 0 / 0.15), 0 10px 15px -6px rgb(0 0 0 / 0.1);
+}
+
+/* App Intro Text */
+.app-intro-text {
+    background: linear-gradient(135deg, var(--gray-50), var(--white));
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    margin-bottom: var(--space-2xl);
+}
+
+.app-intro-text h3 {
+    font-size: 1.25rem;
+    color: var(--gray-900);
+    margin-bottom: var(--space-md);
+}
+
+.app-intro-text p {
+    color: var(--gray-700);
+    font-size: 0.9375rem;
+    line-height: 1.7;
+    margin-bottom: var(--space-sm);
+}
+
+.app-intro-text p:last-child {
+    margin-bottom: 0;
+}
+
+.app-intro-text strong {
+    color: var(--primary-dark);
+}
+
+/* Responsive: Stack buttons on small screens */
+@media (max-width: 480px) {
+    .button-row {
+        flex-direction: column;
+    }
+
+    .pill-button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
 .tech-stack {
     background: var(--gray-50);
     padding: var(--space-2xl);
