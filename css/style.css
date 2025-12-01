@@ -1610,6 +1610,104 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ============================================
+   Generic Section & Utility Classes
+   ============================================ */
+.section {
+    padding: var(--space-4xl) 0;
+    background: var(--white);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.section-eyebrow {
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--primary);
+    margin-bottom: var(--space-sm);
+}
+
+/* ============================================
+   Button Classes (for PDF links, etc.)
+   ============================================ */
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    border-radius: var(--radius-md);
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all var(--transition-base);
+    text-decoration: none;
+}
+
+.button-outline {
+    background: transparent;
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.button-outline:hover {
+    background: var(--primary);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+/* ============================================
+   Academic Papers Section
+   ============================================ */
+.papers-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2xl);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.paper-entry {
+    background: var(--gray-50);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    transition: all var(--transition-base);
+}
+
+.paper-entry:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+}
+
+.paper-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--gray-900);
+    margin-bottom: var(--space-xs);
+}
+
+.paper-subtitle {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--primary-dark);
+    margin-bottom: var(--space-md);
+    font-style: italic;
+}
+
+.paper-text {
+    font-size: 0.9375rem;
+    color: var(--gray-700);
+    line-height: 1.7;
+    margin-bottom: var(--space-lg);
+}
+
+/* ============================================
    Responsive Utilities
    ============================================ */
 @media (max-width: 480px) {
